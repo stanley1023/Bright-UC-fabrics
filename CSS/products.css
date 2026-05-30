@@ -1,0 +1,614 @@
+body {
+      font-family: arial;
+      padding: 0;
+      margin: 0;
+      overflow-x: clip;
+      box-sizing: border-box
+    }
+
+    .header-container {
+      display: flex;
+      height: 100px;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      background-color: white;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: fixed;
+      z-index: 100;
+
+    }
+
+    .left-section {
+      width: 70px;
+      flex-shrink: 0;
+      margin-right: 20px
+    }
+
+    .middle-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: center
+    }
+
+    .middle-section a {
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: black
+    }
+
+    .middle-section a:hover {
+      cursor: pointer;
+      background-color: rgb(102, 20, 20);
+      color: white
+    }
+
+    .right-section {
+      display: flex;
+      margin-left: 20px;
+      margin-right: 30px;
+      flex-shrink: 0;
+      align-items: center
+    }
+
+
+    .uc-logo {
+      max-width: 70px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 35px;
+    }
+
+    #order-now {
+      background-color: rgb(102, 20, 20);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 28px;
+      animation: dance 2s ease-in-out infinite;
+      display: inline-block
+    }
+
+    @keyframes dance {
+      0% {
+        transform: scale(1)
+      }
+
+      50% {
+        transform: scale(1.1)
+      }
+
+      100% {
+        transform: scale(1)
+      }
+    }
+
+
+    /* tablet screen */
+    @media (max-width: 768px) {
+      .header-container {
+        height: auto;
+        padding: 10px;
+        position: fixed;
+      }
+
+      .middle-section {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .middle-section p {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+
+      .right-section {
+        margin-right: 10px;
+      }
+
+      #order-now {
+        font-size: 20px;
+        padding: 5px 10px;
+      }
+    }
+
+    .collection-text {
+      background-color: grey;
+      color: white;
+      padding-top: 250px;
+      padding-bottom: 70px;
+      margin-left: 5px;
+      margin-right: 5px
+    }
+
+    .collection-text h1,
+    .collection-text p {
+      text-align: center
+    }
+
+    .filter-section {
+      margin-bottom: 30px;
+      background-color: white;
+      position: sticky;
+      top: 100px;
+      z-index: 50;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      padding: 15px;
+    }
+
+    .filter-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px
+    }
+
+    .filter-container button {
+      padding: 10px 15px;
+      margin-left: 30px;
+      border-radius: 20px;
+      border: 2px solid rgb(102, 20, 20);
+      background-color: white;
+      color: rgb(102, 20, 20);
+      font-weight: bold
+    }
+
+    .filter-container button:hover {
+      background-color: rgb(102, 20, 20);
+      color: white;
+      cursor: pointer;
+
+    }
+
+    .grid-section {
+      background-color: rgb(253, 231, 231);
+      padding: 50px 10px 50px 10px
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding-left: 60px;
+      padding-right: 60px;
+      gap: 20px;
+      font-family: "Great Vibes", cursive;
+    }
+
+    .product-card1,
+    .product-card2,
+    .product-card3,
+    .product-card4,
+    .product-card5,
+    .product-card6,
+    .product-card7,
+    .product-card8 {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .product-card1:hover,
+    .product-card2:hover,
+    .product-card3:hover,
+    .product-card4:hover,
+    .product-card5:hover,
+    .product-card6:hover,
+    .product-card7:hover,
+    .product-card8:hover {
+      transform: translateY(-5px);
+      cursor: pointer
+    }
+
+    .price-info-card {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .fabric-name {
+      font-weight: bold;
+      font-size: 14px;
+      padding: 5px
+    }
+
+    .fabric-price {
+      font-weight: bold;
+      font-size: 14px;
+      color: rgb(186, 4, 4);
+      padding: 5px
+    }
+
+    .availability-status {
+      font-size: 12px;
+      padding: 5px;
+      font-weight: bold
+    }
+
+
+
+    .footer-container {
+      background-color: rgb(20, 20, 20);
+      color: white;
+      padding: 20px 30px;
+      margin-top: 150px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-left {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+    }
+
+    .footer-right {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .whatsapp-icon,
+    .facebook-icon,
+    .youtube-icon {
+      width: 40px;
+      height: 40;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+
+    .footer-text1 {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    .footer-text2 {
+      font-size: 12px;
+    }
+
+    #footer-line {
+      margin: auto;
+      width: 100%;
+      border-bottom: 1px grey solid;
+      margin-top: 30px;
+    }
+
+    .media-handles {
+      display: flex;
+      gap: 10px;
+    }
+
+    .media-handles:hover {
+      cursor: pointer;
+    }
+
+    .footer-text3 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .other-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .other-links div:hover {
+      cursor: pointer;
+      color: rgb(200, 150, 80);
+    }
+
+
+
+    /* ================= MODAL ================= */
+
+    .product-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+
+      display: none;
+
+      justify-content: center;
+      align-items: center;
+
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background: white;
+      width: 90%;
+      max-width: 700px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      animation: popup .3s ease;
+    }
+
+    @keyframes popup {
+      from {
+        transform: scale(.7);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .modal-details {
+      padding: 20px;
+      display:flex;
+      flex-direction:column;
+      gap:10px
+    }
+
+    .modal-details h2 {
+      margin-bottom: 15px;
+    }
+
+    .modal-details p {
+      margin-bottom: 15px;
+    }
+
+    .modal-details h3 {
+      color: rgb(186, 4, 4);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* ===========================
+TABLET RESPONSIVENESS
+=========================== */
+
+@media screen and (max-width: 992px){
+
+  .header-container{
+    padding:15px;
+    height:auto;
+    gap:15px;
+  }
+
+  .middle-section{
+    gap:10px;
+  }
+
+  .middle-section a{
+    font-size:16px;
+    padding:8px;
+  }
+
+  #order-now{
+    font-size:20px;
+  }
+
+  .grid-container{
+    grid-template-columns:repeat(2,1fr);
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .collection-text{
+    padding-top:220px;
+  }
+
+  .filter-container{
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .filter-container button{
+    margin-left:0;
+  }
+
+  .footer-content{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .footer-right{
+    justify-content:start;
+  }
+
+}
+
+
+
+/* ===========================
+MOBILE RESPONSIVENESS
+=========================== */
+
+@media screen and (max-width: 600px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  .header-container{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:auto;
+    padding:15px 10px;
+  }
+
+  .left-section{
+    margin-right:0;
+  }
+
+  .middle-section{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:5px;
+  }
+
+  .middle-section a{
+    font-size:14px;
+    padding:8px;
+  }
+
+  .right-section{
+    margin:0;
+  }
+
+  #order-now{
+    font-size:18px;
+    padding:8px 12px;
+  }
+
+  .collection-text{
+    padding-top:260px;
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  .collection-text h1{
+    font-size:28px;
+  }
+
+  .collection-text p{
+    font-size:14px;
+  }
+
+  .filter-section{
+    top:180px;
+    padding:10px;
+  }
+
+  .filter-container{
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .filter-container button{
+    margin-left:0;
+    font-size:12px;
+    padding:8px 12px;
+  }
+
+  .grid-container{
+    grid-template-columns:1fr;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .product-card1,
+  .product-card2,
+  .product-card3,
+  .product-card4,
+  .product-card5,
+  .product-card6,
+  .product-card7,
+  .product-card8{
+    width:100%;
+  }
+
+  .fabric-name,
+  .fabric-price,
+  .availability-status{
+    font-size:14px;
+  }
+
+  .footer-container{
+    padding:30px 20px;
+  }
+
+  .footer-content{
+    flex-direction:column;
+    gap:30px;
+    text-align:center;
+  }
+
+  .footer-left,
+  .footer-right{
+    align-items:center;
+      align-items:flex-start;
+  }
+
+  .media-handles{
+    justify-content:center;
+  }
+
+  .other-links{
+    flex-wrap:wrap;
+    gap:10px;
+    text-align:center;
+  }
+
+  .footer-text3{
+    font-size:12px;
+  }
+
+}
+
+
+
+/* ===========================
+SMALL MOBILE DEVICES
+=========================== */
+
+@media screen and (max-width: 400px){
+
+  .middle-section a{
+    font-size:12px;
+  }
+
+  .collection-text h1{
+    font-size:24px;
+  }
+
+  .collection-text p{
+    font-size:12px;
+  }
+
+  #order-now{
+    font-size:15px;
+  }
+
+  .filter-container button{
+    font-size:11px;
+    padding:6px 10px;
+  }
+
+}
