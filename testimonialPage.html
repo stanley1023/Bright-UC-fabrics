@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testimonials</title>
   <link rel="stylesheet" href="CSS/testimonials.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
@@ -11,7 +12,7 @@
   <!-- header -->
   <div class="header-container">
     <div class="left-section">
-      <img class="uc-logo" src="logos/UC logo.png">
+      <img class="uc-logo" src="logos/uc official logo.webp">
     </div>
     <div class="middle-section">
       <a href="index.html">Home</a>
@@ -26,12 +27,13 @@
 
   <!-- body section -->
   <section class="body-container">
-    <h1 id="text1">WHAT OUR CUSTOMERS SAY</h1>
-    <h4 id="text2">Trusted by hundreds of satisfied customers across Nigeria</h4>
+    <h1 id="text1" data-aos="fade-down">WHAT OUR CUSTOMERS SAY</h1>
+    <h4 id="text2" data-aos="fade-up" data-aos-delay="200">Trusted by hundreds of satisfied customers across Nigeria
+    </h4>
 
     <div class="grid-container">
 
-      <div class="grid-box">
+      <div class="grid-box" data-aos="fade-up" data-aos-delay="100">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <div class="testimonials-text"> "The quality of the senator fabric I bought was absolutely amazing. My tailor
           couldn't stop complimenting it.
@@ -42,7 +44,7 @@
         </div>
       </div>
 
-      <div class="grid-box">
+      <div class="grid-box" data-aos="fade-up" data-aos-delay="200">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <div class="testimonials-text">"Ordered for my son's naming ceremony and the fabric was gorgeous. Everyone kept
           asking where I got it from. Thank you UC Fabrics!"</div>
@@ -52,7 +54,7 @@
         </div>
       </div>
 
-      <div class="grid-box">
+      <div class="grid-box" data-aos="fade-up" data-aos-delay="300">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <div class="testimonials-text"> "I run a clothing boutique and Bright U.C Senator materials is my go-to
           supplier.
@@ -63,7 +65,7 @@
         </div>
       </div>
 
-      <div class="grid-box">
+      <div class="grid-box" data-aos="fade-up" data-aos-delay="400">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <div class="testimonials-text"> "Best fabric store in Nigeria! I have been buying from them for 3 years and they
           have never let me down. Customer service is excellent."</div>
@@ -73,7 +75,7 @@
         </div>
       </div>
 
-      <div class="grid-box">
+      <div class="grid-box" data-aos="fade-up" data-aos-delay="500">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <div class="testimonials-text"> "My plug anytime i want to rock culture😂😂 i'd give it to them, they are the
           best for quality"</div>
@@ -83,7 +85,7 @@
         </div>
       </div>
 
-      <div class="grid-box">
+      <div class="grid-box" data-aos="fade-up" data-aos-delay="600">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <div class="testimonials-text">"Fast delivery and the fabric colour was exactly as shown online. UC materials
           never disappoints. Highly recommended!"</div>
@@ -121,7 +123,7 @@
 
     <div class="footer-content">
       <div class="footer-left">
-        <img class="uc-logo" src="logos/uc logo.png">
+        <img class="uc-logo" src="logos/uc official logo.webp">
         <div class="footer-text1">Premium senator fabrics for every occasion.</div>
         <div class="footer-text2">Quality you can feel, style you can trust.</div>
       </div>
@@ -132,7 +134,7 @@
 
         <div class="footer-text2">Our social media.</div>
         <div class="media-handles">
-           <a href="https://wa.me/2348064344146"><img class="whatsapp-icon" src="logos/whatsapp1-icon.png"></a>
+          <a href="https://wa.me/2348064344146"><img class="whatsapp-icon" src="logos/whatsapp1-icon.png"></a>
           <img class="facebook-icon" src="logos/facebook1-icon.png">
           <img class="youtube-icon" src="logos/youtube-icon.png">
         </div>
@@ -150,6 +152,17 @@
 
     <div class="footer-text3">© 2026 UC Senator Fabrics. All rights reserved.</div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: "ease-in-out"
+    });
+  </script>
 
 </body>
 

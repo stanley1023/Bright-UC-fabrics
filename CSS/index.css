@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: arial;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -33,7 +37,7 @@ body {
 }
 
 .middle-section a {
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
   border-radius: 5px;
   white-space: nowrap;
@@ -90,7 +94,7 @@ body {
 
 .hero-section {
   height: 100vh;
-  background-image: url(../logos/background-pic.png);
+  background-image: url(../author-img/backgroundImage.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -102,7 +106,7 @@ body {
 
 .business-name {
   font-size: 58px;
-  font-family: "Great Vibes", cursive;
+  font-family: "Poppins", sans-serif;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -110,7 +114,6 @@ body {
 
 #hero-text1 {
   color: white;
-  font-family: arial;
   text-align: center;
   font-weight: bold;
   font-size: 40px;
@@ -118,7 +121,6 @@ body {
 
 #hero-text2 {
   color: white;
-  font-family: arial;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -226,7 +228,7 @@ body {
 
 .our-services-card h3 {
   color: rgb(102, 0, 20);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .services-subText {
@@ -244,6 +246,8 @@ body {
   color: white;
   padding: 20px 30px;
   margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .footer-content {
@@ -318,6 +322,7 @@ body {
   cursor: pointer;
   color: rgb(200, 150, 80);
 }
+
 /* tablet screen */
 @media (max-width: 768px) {
   .header-container {
@@ -362,7 +367,7 @@ body {
   }
 
   #hero-text2 {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     padding: 0 10px;
   }
@@ -404,7 +409,7 @@ body {
   }
 
   .about-us-textCard div {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
   }
 
@@ -449,14 +454,60 @@ body {
     font-size: 14px;
   }
 
-  /* why chosee us section */
-  .chose-us-card {
-    display: flex;
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
+  /* why chose us section */
+  .why-us-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+/* why chosee us section */
+
+.why-us-section {
+  padding: 80px 20px;
+}
+
+#chose-us-text {
+  text-align: center;
+  color: rgb(102, 0, 20);
+  margin-bottom: 15px;
+}
+
+.why-us-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.why-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+
+.why-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  color: rgb(102, 0, 20);
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  color: grey;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
 /* small screens */
 @media (max-width: 480px) {
   .header-container {
@@ -533,6 +584,9 @@ body {
     line-height: 1.5;
     margin-bottom: 15px;
   }
+  .footer-container {
+    font-size: 13px;
+  }
 
   /* Our Services Section - Mobile */
   .service-wrapper {
@@ -590,6 +644,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .why-us-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ========== SMALL MOBILE (375px and below) ========== */
@@ -601,7 +658,7 @@ body {
   }
 
   .aboutUs-heading {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .about-us-textCard div {
@@ -614,7 +671,7 @@ body {
   }
 
   #our-services {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .services-card1,

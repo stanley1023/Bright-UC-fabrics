@@ -34,13 +34,13 @@ body {
 }
 
 .middle-section a {
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
   border-radius: 5px;
   white-space: nowrap;
   transition: all 0.3s ease;
   text-decoration: none;
-  color:black
+  color: black;
 }
 
 .middle-section a:hover {
@@ -307,6 +307,9 @@ body {
 
   #text2 {
     font-size: 14px;
+  }
+  .footer-container {
+    font-size: 13px;
   }
 
   .footer-content {

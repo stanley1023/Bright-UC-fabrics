@@ -4,16 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="CSS/index.css">
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
   <!-- header -->
   <div class="header-container">
     <div class="left-section">
-      <img class="uc-logo" src="logos/UC logo.png">
+      <img class="uc-logo" src="logos/uc official logo.webp" width="70" height="70">
     </div>
     <div class="middle-section">
       <a href="index.html">Home</a>
@@ -29,10 +27,10 @@
 
   <!-- hero section -->
   <section class="hero-section">
-    <p class="business-name">BRIGHT U.C. VENTURES NIG. LTD.</p>
-    <h1 id="hero-text1">Premium Senator Fabrics</h1>
-    <p id="hero-text2">Authentic, quality fabrics for every occasion</p>
-    <a href="products.html"><button>View Collections</button></a>
+    <p class="business-name" data-aos="fade-down" data-aos-duration="1200">BRIGHT U.C. VENTURES NIG. LTD.</p>
+    <h1 id="hero-text1" data-aos="zoom-in" data-aos-duration="1500">Premium Senator Fabrics</h1>
+    <p id="hero-text2" data-aos="fade-up" data-aos-delay="300">Authentic, quality fabrics for every occasion</p>
+    <a href="products.html"><button data-aos="flip-up" data-aos-delay="600">View Collections</button></a>
 
   </section>
 
@@ -40,11 +38,11 @@
   <!-- about us section -->
   <section>
     <div class="about-us-container">
-      <div class="image-card">
-        <img class="ceo-img" src="author-img/ceo.img.png">
+      <div class="image-card" data-aos="fade-right" data-aos-duration="1200">
+        <img class="ceo-img" src="author-img/uc-profile pic.webp">
       </div>
 
-      <div class="about-us-textCard">
+      <div class="about-us-textCard" data-aos="fade-left" data-aos-duration="1200">
         <h1 class="aboutUs-heading">About BRIGHT U.C</h1>
         <div>Founded in 2000, BRIGHT U.C has grown into a trusted supplier of premium senator materials serving
           customers across Nigeria and beyond.
@@ -64,21 +62,21 @@
 
   <!-- our services section -->
   <section class="service-wrapper">
-    <h1 id="our-services">OUR SERVICES</h1>
+    <h1 id="our-services" data-aos="fade-up">OUR SERVICES</h1>
     <div class="line-through"></div>
     <!-- service card -->
     <div class="our-services-card">
-      <div class="services-card1">
+      <div class="services-card1" data-aos="zoom-in" data-aos-delay="100">
         <img class="globe-icon" src="svg/globe.svg">
         <h3>Worldwide Delivery</h3>
         <div class="services-subText">We deliver senator materials to any location worldwide.</div>
       </div>
-      <div class="services-card2">
+      <div class="services-card2" data-aos="zoom-in" data-aos-delay="300">
         <img class="bulky-icon" src="svg/bulky.svg">
         <h3>Bulk Supply</h3>
         <div class="services-subText">We handle large quantity orders for businesses and retailers.</div>
       </div>
-      <div class="services-card3">
+      <div class="services-card3" data-aos="zoom-in" data-aos-delay="500">
         <img class="star-icon" src="svg/star-icon.svg">
         <h3> Premium Quality</h3>
         <div class="services-subText">Authentic, classy, and premium senator materials guaranteed.</div>
@@ -87,24 +85,46 @@
   </section>
 
   <!-- why chose us section -->
-  <section>
-    <h1 id="chose-us-text">Why Choose Us</h1>
-    <div class="line-through"></div>
+  <section class="why-us-section">
+  <h1 id="chose-us-text" data-aos="fade-up">Why Choose Us</h1>
+  <div class="line-through"></div>
 
-    <div class="chose-us-card">
-      <div class="chose-us-card1">Trusted Since 2000</div>
-      <div class="chose-us-card2">Worldwide Delivery</div>
-      <div class="chose-us-card3">Quality Assurance</div>
-      <div class="chose-us-card4">Customer Satisfaction</div>
+  <div class="why-us-container">
+
+    <div class="why-card" data-aos="fade-up">
+      <div class="why-icon">🏆</div>
+      <h3>Trusted Since 2000</h3>
+      <p>Over two decades of delivering quality senator fabrics to satisfied customers.</p>
     </div>
-  </section>
+
+    <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="why-icon">🌍</div>
+      <h3>Worldwide Delivery</h3>
+      <p>We ship fabrics to customers across Nigeria and around the globe.</p>
+    </div>
+
+    <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="why-icon">✅</div>
+      <h3>Quality Assurance</h3>
+      <p>Every fabric is carefully selected to meet premium quality standards.</p>
+    </div>
+
+    <div class="why-card" data-aos="fade-up" data-aos-delay="600">
+      <div class="why-icon">❤️</div>
+      <h3>Customer Satisfaction</h3>
+      <p>Our customers remain our biggest priority and source of growth.</p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- footer section -->
-  <footer class="footer-container">
+  <footer class="footer-container" data-aos="fade-up">
 
     <div class="footer-content">
       <div class="footer-left">
-        <img class="uc-logo" src="logos/uc logo.png">
+        <img class="uc-logo" src="logos/uc official logo.webp">
         <div class="footer-text1">Premium senator fabrics for every occasion.</div>
         <div class="footer-text2">Quality you can feel, style you can trust.</div>
       </div>
@@ -132,6 +152,17 @@
 
     <div class="footer-text3">© 2026 UC Senator Fabrics. All rights reserved.</div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: "ease-in-out"
+    });
+  </script>
 
 </body>
 
