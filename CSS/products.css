@@ -4,6 +4,7 @@ body {
   margin: 0;
   overflow-x: clip;
   box-sizing: border-box;
+  background: #f3f1f1;
 }
 
 .header-container {
@@ -118,6 +119,11 @@ body {
     font-size: 20px;
     padding: 5px 10px;
   }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .collection-text {
@@ -198,7 +204,7 @@ body {
 .facebook-icon,
 .youtube-icon {
   width: 40px;
-  height: 40;
+  height: 40px;
   border-radius: 50%;
   object-fit: contain;
 }
@@ -251,7 +257,7 @@ body {
 /* filter section */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   padding: 20px;
 }
@@ -262,6 +268,9 @@ body {
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .product-card:hover {
@@ -273,10 +282,16 @@ body {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  object-fit: cover;
+  display: block;
 }
 
 .price-info-card {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
 }
 
 .fabric-name {
@@ -288,6 +303,7 @@ body {
 .fabric-price {
   color: rgb(102, 20, 20);
   font-weight: bold;
+  font-size: 18px;
 }
 
 /* modal popup */
@@ -304,28 +320,32 @@ body {
 .modal-content {
   background: white;
   width: 90%;
-  height: 90vh;
+  height: auto;
   max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   animation: popup 0.3s ease;
 }
-@keyframes popup{
-    from{
-        transform: scale(.7);
-        opacity:0;
-    }
+@keyframes popup {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
 
-    to{
-        transform: scale(1);
-        opacity:1;
-    }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .modal-content img {
   width: 100%;
   border-radius: 10px;
+  max-height: 60vh;
+  object-fit: contain;
 }
 
 .close-btn {
@@ -407,7 +427,7 @@ MOBILE RESPONSIVENESS
   }
 
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -488,13 +508,98 @@ SMALL MOBILE DEVICES
     padding: 6px 10px;
   }
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   .footer-container {
     font-size: 13px;
   }
-   .filter-section {
+  .filter-section {
     top: 220px;
     padding: 10px;
   }
+}
+
+/* cart css */
+.cart-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-cart-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(102, 0, 20);
+  color: white;
+  font-weight: bold;
+}
+
+.add-cart-btn:hover {
+  cursor: pointer;
+  background-color: rgb(130, 0, 30);
+}
+
+.cart-icon {
+  padding: 10px;
+  background-color: rgb(210, 105, 30);
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cart-icon:hover {
+  background-color: rgb(226, 96, 3);
+  cursor: pointer;
+}
+
+.add-to-card {
+  background-color: rgb(210, 105, 30);
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.add-to-card:hover {
+  background-color: rgb(226, 96, 3);
+  cursor: pointer;
+}
+
+/* hidden alert toast */
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: rgb(102, 0, 20);
+  color: white;
+
+  padding: 15px 20px;
+  border-radius: 5px;
+
+  font-weight: bold;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s ease;
+
+  z-index: 2000;
+}
+
+#toast.show {
+  opacity: 1;
+  visibility: visible;
 }

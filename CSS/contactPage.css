@@ -4,6 +4,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+  background: #f3f1f1;
 }
 
 .header-container {
@@ -16,6 +17,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
   gap: 10px;
+
   position: fixed;
   z-index: 100;
 }
@@ -275,6 +277,7 @@ body {
   width: 288px;
   height: 260px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 #contact-logo,

@@ -1,172 +1,143 @@
 const productsData = [
   {
-    name: "Jonkoso (multi-colors)",
-    category: "jonkoso",
-    price: "#2,500 / yard",
-    image: "gallery/jonkoso1.jpeg",
+    name: "senator style",
+    category: "gallery",
+    price: "#40,000",
+    image: "gallery/galleryNew1.webp",
   },
   {
-    name: "stock (navy blue)",
-    category: "stock",
-    price: "#4,000 / yard",
-    image: "gallery/stock.jpg",
+    name: "senator style",
+    category: "gallery",
+    price: "#45,000",
+    image: "gallery/galleryNew2.webp",
   },
   {
     name: "strip (black)",
-    category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip2.jpg",
+    category: "gallery",
+    price: "#50,000",
+    image: "gallery/galleryNew3.webp",
   },
   {
     name: "danchiki  style",
     category: "gallery",
     price: "#50,000",
-    image: "gallery/danchiki- design1.png",
+    image: "gallery/galleryNew4.webp",
   },
   {
-    name: "senator style",
-    category: "gallery",
-    price: "40,000",
-    image: "gallery/gallery1.jpg",
-  },
-  {
-    name: "strip (blue)",
+    name: "strip (green)",
     category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip.jpg",
+    price: "#4,000/ yard",
+    image: "gallery/stripNew.grey.webp",
   },
   {
-    name: "senator style",
-    category: "gallery",
-    price: "40,000",
-    image: "gallery/gallery3.png",
-  },
-   {
-    name: "senator  style",
-    category: "gallery",
-    price: "40,000",
-    image: "gallery/gallery4.png",
+    name: "strip (multi-colors)",
+    category: "strip",
+    price: "#2,500/ yard",
+    image: "gallery/stripNew-multiColor.webp",
   },
   {
-    name: "senator style",
-    category: "gallery",
-    price: "40,000",
-    image: "gallery/gallery5.png",
-  },
-   {
-    name: "caftan style",
-    category: "gallery",
-    price: "50,000",
-    image: "gallery/gallery6.png",
-  },
-   {
-    name: "V-neck style",
-    category: "gallery",
-    price: "40,000",
-    image: "gallery/gallery7.png",
-  },
-   {
-    name: "Jonkoso (green)",
-    category: "jonkoso",
-    price: "#2,500 / yard",
-    image: "gallery/jonkoso-darkGreen.png",
-  },
-   {
-    name: "Jonkoso (light-purple)",
-    category: "jonkoso",
-    price: "#2,500 / yard",
-    image: "gallery/jonkoso-lightpurple.png",
-  },
-   {
-    name: "Jonkoso (purple)",
-    category: "jonkoso",
-    price: "#2,500 / yard",
-    image: "gallery/jonkoso-purple.png",
+    name: "strip (grey)",
+    category: "strip",
+    price: "#2,500/ yard",
+    image: "gallery/stripNew-grey.webp",
   },
   {
-    name: "stock (darkGrey)",
-    category: "stock",
-    price: "#4,000 / yard",
-    image: "gallery/stock-darkGrey.png",
+    name: "strip (green)",
+    category: "strip",
+    price: "#2,500/ yard",
+    image: "gallery/stripNew-green.webp",
   },
   {
-    name: "stock (fayrouz)",
-    category: "stock",
-    price: "#4,000 / yard",
-    image: "gallery/stock-fayrouz.png",
+    name: "strip (brown)",
+    category: "strip",
+    price: "#2,500/ yard",
+    image: "gallery/stripNew-brown.webp",
   },
   {
-    name: "stock (green)",
-    category: "stock",
-    price: "#4,000 / yard",
-    image: "gallery/stock-green.png",
+    name: "strip (black)",
+    category: "strip",
+    price: "#2,500/ yard",
+    image: "gallery/stripNew-black.webp",
   },
   {
-    name: "stock (multi-colors)",
-    category: "stock",
-    price: "#4,000 / yard",
-    image: "gallery/stock-multiColors.png",
+    name: "strip (red)",
+    category: "strip",
+    price: "#2,500/ yard",
+    image: "gallery/stripNew red.webp",
   },
   {
     name: "stock (peach)",
     category: "stock",
     price: "#4,000 / yard",
-    image: "gallery/stock-peach.png",
+    image: "gallery/stockNew-peach.webp",
+  },
+  {
+    name: "stock (green)",
+    category: "stock",
+    price: "#4,000 / yard",
+    image: "gallery/stockNew-green.webp",
+  },
+  {
+    name: "stock (light-green)",
+    category: "stock",
+    price: "#4,000 / yard",
+    image: "gallery/stockNew-ggg.webp",
+  },
+  {
+    name: "stock (navy-blue)",
+    category: "stock",
+    price: "#4,000 / yard",
+    image: "gallery/stockNew-blue.webp",
+  },
+  {
+    name: "stock (ash)",
+    category: "stock",
+    price: "#4,000 / yard",
+    image: "gallery/stockNew-ash.webp",
+  },
+  {
+    name: "jonkoso (purple)",
+    category: "jonkoso",
+    price: "#2,500 / yard",
+    image: "gallery/jonkosoNew-purple.webp",
+  },
+  {
+    name: "jonkoso (light-purple)",
+    category: "jonkoso",
+    price: "#2,500 / yard",
+    image: "gallery/jonkosoNew-lightPurple.webp",
+  },
+  {
+    name: "stock (lemon-green)",
+    category: "jonkoso",
+    price: "#2,500 / yard",
+    image: "gallery/jonkosoNew-green.webp",
   },
   {
     name: "stock (wineRed)",
     category: "stock",
     price: "#4,000 / yard",
-    image: "gallery/stock-wineRed.png",
+    image: "gallery/stock-wineRed.webp",
   },
- 
+
   {
-    name: "stock (woolGrey)",
+    name: "stock (ash)",
     category: "stock",
     price: "#4,000 / yard",
-    image: "gallery/stock-woolGrey.png",
+    image: "gallery/stock-ash.webp",
   },
-    {
-    name: "strip (boldGrey)",
-    category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip-boldGrey.png",
+
+  {
+    name: "senator style",
+    category: "gallery",
+    price: "#40,000 / yard",
+    image: "gallery/gallery5.webp",
   },
-    {
-    name: "strip (brown)",
-    category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip-brown.png",
-  },
-    {
-    name: "strip (green)",
-    category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip-green.png",
-  },
-    {
-    name: "strip (greyGreen)",
-    category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip-greyGreen.png",
-  },
-    {
-    name: "strip (multi-colors)",
-    category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip-multicolors.png",
-  },
-    {
-    name: "strip (red)",
-    category: "strip",
-    price: "#2,500 / yard",
-    image: "gallery/strip-red.png",
-  },
-   {
+  {
     name: "strip (white)",
     category: "strip",
     price: "#2,500 / yard",
-    image: "gallery/strip-white.png",
+    image: "gallery/strip-white.webp",
   },
 ];
 
@@ -183,7 +154,9 @@ function renderProducts(productsList) {
     '${product.price}',
     '${product.image}'
     )"> 
-       <img src="${product.image}">
+       <img src="${product.image}"
+       loading="lazy"
+       alt="${product.name}">
         <div class="price-info-card">
           <div class="fabric-name">
             ${product.name}
@@ -191,6 +164,10 @@ function renderProducts(productsList) {
             <div class="fabric-price">
             ${product.price}
           </div>
+
+          <button class="add-to-card" onclick="event.stopPropagation(); addToCart(${productsData.indexOf(product)})">
+          Add to cart
+          </button>
 
     </div>
     
@@ -237,3 +214,34 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+
+// add to cart function
+function addToCart(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(productsData[index]);
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  updateCartCount();
+
+  showToast("Product added to cart ✓");
+}
+
+//  update count function
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent = cart.length;
+}
+updateCartCount();
+
+// hidden alert toast
+function showToast(message) {
+  const toast = document.getElementById("toast");
+
+  toast.textContent = message;
+
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2000);
+}

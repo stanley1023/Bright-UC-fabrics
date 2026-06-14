@@ -12,7 +12,7 @@
   <!-- header -->
   <div class="header-container">
     <div class="left-section">
-      <img class="uc-logo" src="logos/uc official logo.webp">
+      <img class="uc-logo" src="logos/uc official logo.webp" loading="lazy" alt="UC Logo">
     </div>
     <div class="middle-section">
       <a href="index.html">Home</a>
@@ -22,7 +22,14 @@
     </div>
     <div class="right-section">
       <p id="order-now">order now!</p>
+
+      <a href="cart.html" class="cart-icon">
+        🛒 <span id="cartCount">0</span>
+      </a>
+
     </div>
+
+
   </div>
 
 
@@ -63,7 +70,7 @@
 
     <div class="footer-content">
       <div class="footer-left">
-        <img class="uc-logo" src="logos/uc official logo.webp">
+        <img class="uc-logo" src="logos/uc official logo.webp" alt="UC Senator Fabrics Logo" loading="lazy">
         <div class="footer-text1">Premium senator fabrics for every occasion.</div>
         <div class="footer-text2">Quality you can feel, style you can trust.</div>
       </div>
@@ -91,6 +98,11 @@
 
     <div class="footer-text3">© 2026 UC Senator Fabrics. All rights reserved.</div>
   </footer>
+
+  <!-- hidden alert toast -->
+  <div id="toast">
+    Product added to cart ✓
+  </div>
 
   <script src="js/productsData.js"></script>
 
